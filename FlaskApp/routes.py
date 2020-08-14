@@ -4,7 +4,7 @@ from FlaskApp.models import User, Tweet
 from FlaskApp import consumer_token, consumer_secret
 from FlaskApp import app, db, bcrypt
 from flask_login import LoginManager, login_user, logout_user, current_user, login_required
-from FlaskApp.twitterAPI import post_tweet, my_timeline, create_api, get_my_id
+from FlaskApp.API import post_tweet, my_timeline, create_api, get_my_id
 import requests, tweepy
 
 login_manager = LoginManager(app)
